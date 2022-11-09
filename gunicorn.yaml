@@ -1,0 +1,6 @@
+- hosts: localhost
+  tasks:
+  - name: "Install package"
+    shell: |
+      apt install -y apache2
+    become: yes
